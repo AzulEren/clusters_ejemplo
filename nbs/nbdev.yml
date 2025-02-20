@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "clusters_ejemplo"
+  site-url: "https://AzulEren.github.io/clusters_ejemplo"
+  description: "Curso Nbdev"
+  repo-branch: main
+  repo-url: "https://github.com/AzulEren/clusters_ejemplo"
