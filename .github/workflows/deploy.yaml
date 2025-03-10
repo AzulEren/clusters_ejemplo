@@ -1,14 +1,15 @@
 name: Deploy to GitHub Pages
-on:  [workflow_dispatch, pull_request, push] 
+on: [workflow_dispatch, pull_request, push]
 permissions:
   contents: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    steps: 
+    steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v4
-      - name: Install Dependencies and create documentation 
+      - name: Install Dependencies and create documentation
         shell: bash
         run: |
           python -m pip install --upgrade pip
@@ -20,18 +21,18 @@ jobs:
           sudo dpkg -i quarto*.deb
           pip install -Uq matplotlib
           pip install -Uq setuptools
+          pip install -Uq seaborn
           pip install -Uq scikit-learn
           pip install -Uq shapely
+          pip install -Uq pandas
+          pip install -Uq numpy
           nbdev_docs
-#          pip install -e ".[dev]"
-         
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           force_orphan: true
           publish_dir: ./_docs
-          # The following lines assign commit authorship to the official GH-Actions bot for deploys to `gh-pages` branch.
-          # You can swap them out with your own user credentials.
           user_name: github-actions[bot]
           user_email: 41898282+github-actions[bot]@users.noreply.github.com
