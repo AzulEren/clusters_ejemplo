@@ -1,5 +1,5 @@
 name: Test CI
-on:  [workflow_dispatch, pull_request, push]
+on: [workflow_dispatch, pull_request, push]
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -21,6 +21,7 @@ jobs:
           python -m pip install -Uq setuptools
           python -m pip install -Uq scikit-learn
           python -m pip install -Uq shapely
+
 
       - name: Test the package
         shell: bash
@@ -51,4 +52,3 @@ jobs:
           if [ ! $SKIP_TEST ]; then
             nbdev_test --flags "$FLAGS"
           fi
-      
