@@ -1,0 +1,42 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "clusters_ejemplo",
+    "section": "",
+    "text": "If you are new to using nbdev here are some useful pointers to get you started.\n\n\n# make sure clusters_ejemplo package is installed in development mode\n$ pip install -e .\n\n# make changes under nbs/ directory\n# ...\n\n# compile to have changes apply to clusters_ejemplo\n$ nbdev_prepare",
+    "crumbs": [
+      "clusters_ejemplo"
+    ]
+  },
+  {
+    "objectID": "index.html#developer-guide",
+    "href": "index.html#developer-guide",
+    "title": "clusters_ejemplo",
+    "section": "",
+    "text": "If you are new to using nbdev here are some useful pointers to get you started.\n\n\n# make sure clusters_ejemplo package is installed in development mode\n$ pip install -e .\n\n# make changes under nbs/ directory\n# ...\n\n# compile to have changes apply to clusters_ejemplo\n$ nbdev_prepare",
+    "crumbs": [
+      "clusters_ejemplo"
+    ]
+  },
+  {
+    "objectID": "index.html#usage",
+    "href": "index.html#usage",
+    "title": "clusters_ejemplo",
+    "section": "Usage",
+    "text": "Usage\n\nInstallation\nInstall latest from the GitHub repository:\n$ pip install git+https://github.com/AzulEren/clusters_ejemplo.git\nor from conda\n$ conda install -c AzulEren clusters_ejemplo\nor from pypi\n$ pip install clusters_ejemplo\n\n\nDocumentation\nDocumentation can be found hosted on this GitHub repository’s pages. Additionally you can find package manager specific guidelines on conda and pypi respectively.",
+    "crumbs": [
+      "clusters_ejemplo"
+    ]
+  },
+  {
+    "objectID": "cluster.html",
+    "href": "cluster.html",
+    "title": "cluster",
+    "section": "",
+    "text": "data_points\n\n data_points (n, min_x=0, min_y=0, max_x=1, max_y=1, seed=None)\n\nUna clase que contiene a los datos\n\n\n\nClusters\n\n Clusters (data_structure)\n\nUna clase que contiene los clusters",
+    "crumbs": [
+      "cluster"
+    ]
+  }
+]
